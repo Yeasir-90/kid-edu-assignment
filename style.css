@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* shared style */
+.btn-style{
+    border-radius: 10px;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    width: 160px;
+    height: 40px;
+    
+
+}
+.cardbox-heading{
+    color: rgb(32, 32, 32);
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    
+}
+.cardbox-para{
+    color: rgb(128, 128, 128);
+    font-family: Raleway;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+
+}
+.cardbox-link{
+    text-decoration: none;
+    font-family: Quicksand;
+    font-size: 0.9375rem;
+    font-weight: 700;
+
+}
+
+/* navbar related style */
+.navbar-content{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.school{
+    display: flex;
+    align-items: center;
+    
+}
+.school-heading{
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 10px;
+    
+
+}
+
+.link-content{
+    display: flex;
+    list-style: none;
+
+}
+.link-content li a{
+    text-decoration: none;
+    margin-left: 25px;
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 700;
+
+}
+
+/* banner related style */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.banner-content{
+    width: 640px;
+    height: 330px;
+    margin-right: 130px;
+}
+.banner-heading{
+    font-family: Quicksand;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+
+}
+.banner-description{
+    color: rgb(17, 17, 17);
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+
+}
+
+/* standard curriculum related style */
+.curriculum{
+    background-image: url("/assets/bg.png");
+    background-size: cover;
+    margin-bottom: 120px;
+}
+.curriculum-content{
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 80px;
+}
+
+.first-cardbox, .second-cardbox, .third-cardbox{
+    /* width: 360px;
+    height: 420px; */
+    text-align: center;
+    padding: 40px;
+}
+.first-cardbox{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.second-cardbox{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(255, 244, 220);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+.third-cardbox{
+    box-sizing: border-box;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.curriculum-heading{
+    color: rgb(0, 0, 0);
+    font-family: Quicksand;
+    font-size: 2.875rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.arrow{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.arrow:hover img{
+    background-color: aqua;
+}
+
+
+
+
+
+@media screen and (max-width: 576px){
+    .school-heading, .link-content, .btn-yellow{
+        display: none;
+        
+    }
+    .banner{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .banner-content{
+        text-align: center;
+        margin: 0;
+        width: 350px;
+        height: 250px;
+    }
+    .img-hero{
+        width: 330px;
+    }
+    .img-hero-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .curriculum{
+        margin-top: 360px;
+    }
+    .curriculum-content{
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+        margin: auto;
+    }
+    .arrow{
+        display: none;
+    }
+    
+
+}
