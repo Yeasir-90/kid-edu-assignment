@@ -21,6 +21,9 @@
     
 
 }
+.icons{
+    display: none;
+}
 .cardbox-heading{
     color: rgb(32, 32, 32);
     font-family: Quicksand;
@@ -43,6 +46,28 @@
     font-family: Quicksand;
     font-size: 0.9375rem;
     font-weight: 700;
+
+}
+.stories-font-heading{
+    font-family: Quicksand;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.stories-btn-style{
+    border-radius: 47px;
+    color: rgb(255, 255, 255);
+    font-family: Raleway;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    padding: 12px;
+    border: none;
+    position: relative;
+    left: 20px;
+    bottom: 25px;
+
 
 }
 
@@ -172,12 +197,126 @@
     background-color: aqua;
 }
 
+/* our stories related style */
+.stories{
+    background: url("/assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 
+}
 
+.stories-heading{
+    font-family: Quicksand;
+    font-size: 2.875rem;
+    text-align: center;
+    margin-bottom: 80px;
+}
+ 
+.stories-content{
+    display: flex;
+    gap: 90px;
+    justify-content: center;
+    margin-bottom: 80px;
+}
+.stories-cardbox-big{
+    width: 520px;
+  
 
+}
 
+.stories-cardbox-small{
+    display: grid;
+    grid-template-columns: repeat(2, 290px);
+    gap: 40px;
+}
+
+.stories-cardbox-big, .small-one, .small-two, .small-three, .small-four{
+    border-radius: 16px;
+    background: rgb(255, 255, 255);
+
+}
+
+.stories-cardbox-heading{
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 60px;
+    margin-left: 20px;
+    
+}
+
+.stories-cardbox-para{
+    color: rgb(102, 102, 102);
+    font-family: Raleway;
+    font-size: 0.9375rem;
+    font-weight: 500;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    
+}
+.stories-btn{
+    text-align: center;
+}
+/* footer related style */
+.footer{
+    background-color: rgb(1, 172, 253);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 250px;
+    height: 500px;
+}
+.footer-content{
+    width: 400px;
+    
+}
+.footer-heading{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 2.625rem;
+    font-weight: 700;
+    margin-top: 25px;
+    
+}
+.footer-para{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-left: 10px;
+    
+}
+
+.footer-link-para, .footer-social-para{
+    color: rgb(255, 255, 255);
+    font-family: Quicksand;
+    font-size: 1.5rem;
+    font-weight: 700;
+
+}
+.footer-link-content li a{
+    text-decoration: none;
+    font-family: Quicksand;
+    font-size: 1.25rem;
+    font-weight: 500;
+  
+    
+}
+.footer-link-content li{
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.footer-social-content img{
+    padding-left: 5px;
+    
+}
+.footer-flex{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
 @media screen and (max-width: 576px){
-    .school-heading, .link-content, .btn-yellow{
+    .school-heading, .link-content, .btn-yellow, .stories-cardbox-big{
         display: none;
         
     }
@@ -199,7 +338,7 @@
         display: flex;
         justify-content: center;
     }
-    .curriculum{
+    .curriculum, .stories{
         margin-top: 360px;
     }
     .curriculum-content{
@@ -211,6 +350,24 @@
     .arrow{
         display: none;
     }
+    .stories-content{
+        
+        width: 80%;
+        margin: auto;
+        margin-bottom: 50px;
+    }
+    .stories-cardbox-small{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .stories-btn-style{
+        width: min-content;
+    }
+    /* .icons{
+        display: block;
+    } */
+    
     
 
 }
