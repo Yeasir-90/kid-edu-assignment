@@ -12,7 +12,8 @@
     font-family: Quicksand;
     color: rgb(17, 17, 17);
     font-weight: 600;
-    display: none;
+    
+    
 }
 
 /* shared style */
@@ -148,7 +149,7 @@
 
 /* standard curriculum related style */
 .curriculum{
-    background-image: url("/assets/bg.png");
+    background-image: url("./assets/bg.png");
     background-size: cover;
     margin-bottom: 120px;
 }
@@ -207,7 +208,7 @@
 
 /* our stories related style */
 .stories{
-    background: url("/assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background: url("./assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
 
 }
 
@@ -409,6 +410,12 @@
         display: flex;
         justify-content: space-between;
         border-bottom: 1px solid tomato;
+    }
+    .marquee{
+
+    }
+    .marquee-content{
+        
     }
     
     
