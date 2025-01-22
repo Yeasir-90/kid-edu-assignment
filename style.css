@@ -360,7 +360,7 @@
     .curriculum-content{
         display: flex;
         flex-direction: column;
-        width: 85%;
+        width: 95%;
         margin: auto;
     }
     .arrow{
